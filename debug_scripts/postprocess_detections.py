@@ -49,7 +49,7 @@ def decode(pred, grids, strides):
 
 
 def run_postprocess(pred, scale, px, py, ow, oh, image, out,
-                    conf=0.30, nms=0.45, classes='fire,smoke', verbose=True):
+                    conf=0.30, nms=0.45, classes='smoke,fire', verbose=True):
     """
     Decode + NMS + draw + save, on an ALREADY-IN-MEMORY prediction tensor.
 
@@ -166,7 +166,7 @@ def main():
     ap.add_argument('--out', default='/home/root/result.jpg')
     ap.add_argument('--conf', type=float, default=0.30)
     ap.add_argument('--nms', type=float, default=0.45)
-    ap.add_argument('--classes', default='fire,smoke')
+    ap.add_argument('--classes', default='smoke,fire')
     args = ap.parse_args()
 
     z = np.load(args.npz, allow_pickle=True)

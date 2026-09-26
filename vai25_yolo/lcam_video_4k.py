@@ -27,7 +27,7 @@ import numpy as np
 import cv2
 
 XMODEL = "/home/root/lcam_v5_2p5.xmodel"
-NAMES = ["fire", "smoke"]
+NAMES = ["smoke", "fire"]
 COLORS = [(0, 0, 255), (0, 165, 255)]          # fire = red, smoke = orange
 REDUCE_FLAG = {1: cv2.IMREAD_COLOR,
                2: cv2.IMREAD_REDUCED_COLOR_2,

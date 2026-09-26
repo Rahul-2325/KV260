@@ -85,7 +85,7 @@ def main():
     ap.add_argument("--max-frames", type=int, default=0, help="0 = whole clip")
     ap.add_argument("--conf", type=float, default=0.30)
     ap.add_argument("--nms", type=float, default=0.45)
-    ap.add_argument("--classes", default="fire,smoke")
+    ap.add_argument("--classes", default="smoke,fire")
     ap.add_argument("--save", default=None,
                     help="write an annotated MJPG video here (adds real "
                          "draw+encode cost, reported separately)")

@@ -59,9 +59,9 @@ suspicion until its protocol is read.
 Attention Approximation in Modern YOLO on FPGA," arXiv 2607.13106,
 July 2026.**
 
-They hit the same wall we did — attention ops (reshape, transpose, matmul,
-softmax) aren't DPU-native — and solved it the OPPOSITE way:
-**approximate** the attention so it compiles onto the DPU (q⊙k elementwise
+They hit thesolved it the OPPOSITE way:
+**approximate** the attention so  same wall we did — attention ops (reshape, transpose, matmul,
+softmax) aren't DPU-native — and it compiles onto the DPU (q⊙k elementwise
 instead of matmul, **hard-sigmoid instead of softmax**, 1×1 convs), on a
 ZCU104 across all eight DPUCZDX8G sizes (B512–B4096).
 

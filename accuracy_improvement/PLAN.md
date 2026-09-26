@@ -55,6 +55,41 @@ would change.
   any new architecture against, and confirms the retraining pipeline itself
   works.
 
+### 0.0 v7 RESULT (2026-09-27) — lcam-v7-retrain COMPLETE
+
+Kaggle `punnamrahul/lcam-v7-retrain`, 147.5 min on one GPU. v5 LCAM
+(Hardsigmoid + StagedGlobalAvgPool), COCO-pretrained YOLOX-S init, proper
+YOLOX Exp (Mosaic/MixUp/EMA/val-selected best), 30 epochs, batch 32, fp16.
+Evaluated by YOLOX's COCO evaluator on the FULL 3,099-image D-Fire val split,
+**FP32** (not yet quantized):
+
+```
+epoch  mAP@.5:.95  mAP@0.5
+   10     0.351     0.689
+   20     0.428     0.767
+   22     0.435     0.775   <- best (saved as best_ckpt.pth)
+   30     0.433     0.772
+per-class AP@.5:.95 (best): smoke ~0.49, fire ~0.38
+```
+
+Comparison, same recipe, only the LCAM module differs:
+- v3.1 (old plain-Sigmoid LCAM): 0.765 / 0.430
+- **v7 (deployed v5 Hardsigmoid LCAM): 0.775 / 0.435** (+1.0 pt mAP@0.5)
+
+NOT yet comparable to the deployed board number (0.7360 / 0.3774) — that
+one is INT8 on the board over a 400-image slice via `eval_map.py`. To
+compare honestly, v7 must be quantized + compiled for fingerprint
+`0x101000012010407` (`training/scripts/quantize_v5.py` flow in the Vitis-AI
+3.0 Docker) and run through the same `eval_map.py` on the board.
+Also note: mAP plateaus from epoch 21 on; the no-aug phase added ~0.6 pt.
+A longer schedule (the original notebook's 100-epoch config) may add a
+little more — cheap to test later.
+
+Outputs: `~/wildfire_project/kaggle_v7_output/final_models/`
+(`lcam_yolox_wildfire_v7_BEST.pth`, `train_log.txt`). v7 BEST is now the
+available teacher for v8 knowledge distillation (RESEARCH_DIRECTIONS C2)
+and the base model for channel pruning (C1).
+
 ### 0.1 Concrete FPS levers identified (2026-09-27), for either architecture
 
 **Architecture/training-side:**

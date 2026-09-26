@@ -26,7 +26,7 @@ INPUT_H     = 640
 NUM_CLASSES = 2          # fire / smoke (adjust if your model has different classes)
 CONF_THRESH = 0.3
 NMS_THRESH  = 0.45
-CLASS_NAMES = ["fire", "smoke"]   # adjust to match your training labels
+CLASS_NAMES = ["smoke", "fire"]   # adjust to match your training labels
 
 # ─── Preprocessing ────────────────────────────────────────────────────────────
 def preprocess(image_path):

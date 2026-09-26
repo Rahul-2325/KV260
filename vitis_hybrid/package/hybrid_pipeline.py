@@ -406,7 +406,7 @@ def main():
                          "and printed separately, never folded in.")
     ap.add_argument("--conf", type=float, default=0.30, help="used with --out")
     ap.add_argument("--nms", type=float, default=0.45, help="used with --out")
-    ap.add_argument("--classes", default="fire,smoke", help="used with --out")
+    ap.add_argument("--classes", default="smoke,fire", help="used with --out")
     ap.add_argument("--ref", default="/home/root/e2e_outputs.npz")
     args = ap.parse_args()
 

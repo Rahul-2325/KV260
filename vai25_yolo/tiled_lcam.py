@@ -26,7 +26,7 @@ import numpy as np
 import cv2
 
 XMODEL = "/home/root/lcam_v5_2p5.xmodel"
-NAMES = ["fire", "smoke"]
+NAMES = ["smoke", "fire"]
 COLORS = [(0, 0, 255), (0, 165, 255)]
 
 

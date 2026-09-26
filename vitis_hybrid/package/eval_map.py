@@ -209,7 +209,7 @@ def main():
     ap.add_argument("--conf", type=float, default=0.05)
     ap.add_argument("--nms", type=float, default=0.45)
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--classes", default="fire,smoke")
+    ap.add_argument("--classes", default="smoke,fire")
     ap.add_argument("--confusion", action="store_true",
                     help="also print a class-confusion breakdown: of the "
                          "wrong-class detections, how many actually sit on "

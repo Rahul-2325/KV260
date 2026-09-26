@@ -1,0 +1,80 @@
+loaded lcam_yolox_wildfire_v7_BEST.pth: strict match, LCAM x4, Hardsigmoid x8
+complexity: {'params_M': 8.981309, 'GFLOPs_640': 26.24812, 'cpu_fp32_latency_ms': 177.44969953334171, 'cpu_threads': 16}
+  [val] 250/3099  187 ms/img  eta 8.9 min
+  [val] 500/3099  183 ms/img  eta 7.9 min
+  [val] 750/3099  184 ms/img  eta 7.2 min
+  [val] 1000/3099  186 ms/img  eta 6.5 min
+  [val] 1250/3099  184 ms/img  eta 5.7 min
+  [val] 1500/3099  205 ms/img  eta 5.5 min
+  [val] 1750/3099  206 ms/img  eta 4.6 min
+  [val] 2000/3099  201 ms/img  eta 3.7 min
+  [val] 2250/3099  195 ms/img  eta 2.8 min
+  [val] 2500/3099  191 ms/img  eta 1.9 min
+  [val] 2750/3099  186 ms/img  eta 1.1 min
+  [val] 3000/3099  182 ms/img  eta 0.3 min
+[val] 3099 images, 1724 with objects, 3931 GT boxes
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.08s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.15s).
+Accumulating evaluation results...
+DONE (t=0.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.435
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.775
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.428
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.208
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.385
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.352
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.544
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.573
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.648
+  [test] 250/4306  146 ms/img  eta 9.9 min
+  [test] 500/4306  156 ms/img  eta 9.9 min
+  [test] 750/4306  151 ms/img  eta 9.0 min
+  [test] 1000/4306  156 ms/img  eta 8.6 min
+  [test] 1250/4306  160 ms/img  eta 8.1 min
+  [test] 1500/4306  172 ms/img  eta 8.0 min
+  [test] 1750/4306  195 ms/img  eta 8.3 min
+  [test] 2000/4306  191 ms/img  eta 7.4 min
+  [test] 2250/4306  185 ms/img  eta 6.4 min
+  [test] 2500/4306  181 ms/img  eta 5.4 min
+  [test] 2750/4306  177 ms/img  eta 4.6 min
+  [test] 3000/4306  175 ms/img  eta 3.8 min
+  [test] 3250/4306  173 ms/img  eta 3.0 min
+  [test] 3500/4306  171 ms/img  eta 2.3 min
+  [test] 3750/4306  170 ms/img  eta 1.6 min
+  [test] 4000/4306  171 ms/img  eta 0.9 min
+  [test] 4250/4306  171 ms/img  eta 0.2 min
+[test] 4306 images, 2301 with objects, 5189 GT boxes
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.17s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.84s).
+Accumulating evaluation results...
+DONE (t=0.39s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.419
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.766
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.195
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.382
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.501
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.343
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.531
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.337
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.635
+done -> results_v7/report.md
