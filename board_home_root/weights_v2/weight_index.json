@@ -1,0 +1,1778 @@
+{
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_m_2_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark4_1_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_0_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_2_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_0_weight__9223372036854775669": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_0_weight__9223372036854775669.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_2_weight__9223372036854775667": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_channel_attention_mlp_2_weight__9223372036854775667.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_channel_reduce_avg_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_channel_reduce_avg_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_channel_reduce_max_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_channel_reduce_max_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam4_spatial_attention_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark5_2_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_0_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_2_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_0_weight__9223372036854775621": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_0_weight__9223372036854775621.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_2_weight__9223372036854775619": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_channel_attention_mlp_2_weight__9223372036854775619.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_channel_reduce_avg_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_channel_reduce_avg_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_channel_reduce_max_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_channel_reduce_max_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam5_spatial_attention_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_lateral_conv0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_lateral_conv0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_lateral_conv0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_lateral_conv0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p4_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p4_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_reduce_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_reduce_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_reduce_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_reduce_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_p3_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_p3_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_bu_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_bu_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_bu_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_bu_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n3_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n3_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_bu_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_bu_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_bu_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_bu_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_C3_n4_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_C3_n4_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_stems_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_stems_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_stems_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_stems_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_0_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_0_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_0_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_0_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_0_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_0_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_0_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_0_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_0_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_0_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_0_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_0_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_0_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_0_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_0_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_0_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_0_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_0_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_0_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_0_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_0_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_0_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_0_weight": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_0_bias": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_0_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_stems_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_stems_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_stems_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_stems_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_1_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_1_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_1_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_1_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_1_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_1_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_1_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_1_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_1_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_1_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_1_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_1_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_1_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_1_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_1_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_1_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_1_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_1_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_1_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_1_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_1_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_1_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_1_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_1_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_1_weight": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_1_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_1_bias": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_1_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_stems_2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_stems_2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_stems_2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_stems_2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_2_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_2_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_2_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_2_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_2_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_2_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_cls_convs_2_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_convs_2_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_2_weight": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_head_cls_preds_2_bias": {
+  "file": "LCAMYOLOXDetector__model_head_cls_preds_2_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_2_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_2_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_2_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_2_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_2_1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_2_1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_head_reg_convs_2_1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_convs_2_1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_2_weight": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_head_reg_preds_2_bias": {
+  "file": "LCAMYOLOXDetector__model_head_reg_preds_2_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_2_weight": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_head_obj_preds_2_bias": {
+  "file": "LCAMYOLOXDetector__model_head_obj_preds_2_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__SpatialAttention_spatial_attention__Conv2d_conv__input_289_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Spatial_e4792db3.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__SpatialAttention_spatial_attention__Conv2d_channel_reduce_avg__25680_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Spatial_5805bd62.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__SpatialAttention_spatial_attention__Conv2d_channel_reduce_max__25700_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Spatial_a089d65b.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__25606_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Channel_b86645fe.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 16
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_273_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Channel_be95b731.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 17
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__25656_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Channel_a8029e67.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 13
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_279_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__Channel_486bcbfa.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__SpatialAttention_spatial_attention__Conv2d_conv__input_221_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Spatial_8b00ec2d.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__SpatialAttention_spatial_attention__Conv2d_channel_reduce_avg__25226_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Spatial_e9d4ff35.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__SpatialAttention_spatial_attention__Conv2d_channel_reduce_max__25246_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Spatial_2483cfb3.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__25152_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Channel_855e1224.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 17
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_205_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Channel_0c81142a.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 17
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__25202_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Channel_24aabc61.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 16
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_211_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__Channel_7f077942.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__SpatialAttention_spatial_attention__Conv2d_conv__input_141_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Spatial_edd23a75.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__SpatialAttention_spatial_attention__Conv2d_channel_reduce_avg__24757_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Spatial_dc13dddf.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__SpatialAttention_spatial_attention__Conv2d_channel_reduce_max__24777_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Spatial_cf2438dd.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__24683_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Channel_deb718af.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 17
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_125_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Channel_cf670338.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__24733_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Channel_c48e338b.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_131_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__Channel_b4717493.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 13
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__SpatialAttention_spatial_attention__Conv2d_conv__input_61_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Spatial_15b7f876.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__SpatialAttention_spatial_attention__Conv2d_channel_reduce_avg__24288_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Spatial_ce79f63a.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 13
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__SpatialAttention_spatial_attention__Conv2d_channel_reduce_max__24308_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Spatial_c12e6d57.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 13
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__24214_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Channel_fb77c8f2.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 15
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_45_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Channel_3375f462.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 13
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_2__24264_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Channel_9cce3bcd.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 14
+ },
+ "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__Sequential_mlp__Conv2d_0__input_51_fake_bias": {
+  "file": "LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__Channel_4bc86f1d.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 11
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_stem_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_stem_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 11
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_stem_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_stem_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark2_1_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_2_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_0_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_0_weight__9223372036854775775": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_0_weight__9223372036854775775.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_2_weight__9223372036854775773": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_channel_attention_mlp_2_weight__9223372036854775773.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_channel_reduce_avg_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_channel_reduce_avg_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_channel_reduce_max_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_channel_reduce_max_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam2_spatial_attention_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_0_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_0_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_0_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_0_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 10
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_0_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 4
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_1_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv1_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv1_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 7
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv1_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv1_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv2_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv2_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv2_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_m_2_conv2_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 6
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv3_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv3_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 8
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv3_conv_bias": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_dark3_1_conv3_conv_bias.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 5
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_0_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_0_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_2_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_2_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_0_weight__9223372036854775722": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_0_weight__9223372036854775722.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_2_weight__9223372036854775720": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_channel_attention_mlp_2_weight__9223372036854775720.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_channel_reduce_avg_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_channel_reduce_avg_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_channel_reduce_max_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_channel_reduce_max_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ },
+ "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_conv_weight": {
+  "file": "LCAMYOLOXDetector__model_backbone_backbone_lcam3_spatial_attention_conv_weight.npy",
+  "shape": [
+   0
+  ],
+  "dtype": "int8",
+  "fp": 9
+ }
+}

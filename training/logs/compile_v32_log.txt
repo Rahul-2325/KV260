@@ -1,0 +1,14 @@
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: function
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096
+[UNILOG][INFO] Graph name: LCAMYoloxBackbone, with op num: 458
+[UNILOG][INFO] Begin to compile...
+[0;33m[UNILOG][WARNING] xir::Op{name = LCAMYoloxBackbone__LCAMYoloxBackbone_CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__AdaptiveAvgPool2d_avg_pool__input_43_i0, type = pool-fix} has been assigned to CPU: [Pool's kernel (160, 160) is too large to be loaded into fmap buffer. "⌈kernel_h / bank_num(=8)⌉ * kernel_w * ⌈channel_parallel(=16) / bank_width(=16)⌉ is supposed to be less equal than 2048].
+[m[UNILOG][INFO] Total device subgraph number 19, DPU subgraph number 9
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/results/compiled_v32/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/results/compiled_v32//lcam_yolox_wildfire_v32.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is 09168f218a0eb8370029422429f3f710, and has been saved to "/workspace/results/compiled_v32/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************

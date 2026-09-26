@@ -1,0 +1,8 @@
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: function
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096
+[UNILOG][INFO] Graph name: LCAMYoloxBackbone, with op num: 450
+[UNILOG][INFO] Begin to compile...
+[0;33m[UNILOG][WARNING] xir::Op{name = LCAMYoloxBackbone__LCAMYoloxBackbone_CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__AdaptiveAvgPool2d_avg_pool__input_43_i0, type = pool-fix} has been assigned to CPU: [Pool's kernel (160, 160) is too large to be loaded into fmap buffer. "⌈kernel_h / bank_num(=8)⌉ * kernel_w * ⌈channel_parallel(=16) / bank_width(=16)⌉ is supposed to be less equal than 2048].
+[m[0;33m[UNILOG][WARNING] xir::Op{name = LCAMYoloxBackbone__LCAMYoloxBackbone_CSPDarknet_backbone__LCAM_lcam5__SpatialAttention_spatial_attention__12766, type = pool-fix} has been assigned to CPU: ["kernel_width"(512) is not in DPU supported range [1, 100]].
+[m

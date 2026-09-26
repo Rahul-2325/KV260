@@ -1,0 +1,15 @@
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: function
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096
+[UNILOG][INFO] Graph name: LCAMYOLOXDetector, with op num: 811
+[UNILOG][INFO] Begin to compile...
+[0;33m[UNILOG][WARNING] xir::Op{name = LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam2__ChannelAttention_channel_attention__AdaptiveAvgPool2d_avg_pool__input_43_i0, type = pool-fix} has been assigned to CPU: [Pool's kernel (160, 160) is too large to be loaded into fmap buffer. "⌈kernel_h / bank_num(=8)⌉ * kernel_w * ⌈channel_parallel(=16) / bank_width(=16)⌉ is supposed to be less equal than 2048].
+[m[0;33m[UNILOG][WARNING] xir::Op{name = LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOXHead_head__26514, type = concat-fix} has been assigned to CPU: [One of the input is from non-DPU device. And input xir::Op{name = LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOXHead_head__26505_reshaped, type = reshape-fix}'s channel is 6400, it's too large and supposed to be less than 4096.].
+[m[UNILOG][INFO] Total device subgraph number 32, DPU subgraph number 13
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/compiled/detector/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/compiled/detector//lcam_yolox_detector_v32.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is 14c6ea054f0a817c1b838fea4e62aadd, and has been saved to "/workspace/compiled/detector/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************

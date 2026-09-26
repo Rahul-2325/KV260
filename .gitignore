@@ -1,0 +1,10 @@
+*.avi
+*.pdf
+*.pth
+*.xmodel
+*.bit
+*.bin
+*.xclbin
+*.xo
+__pycache__/
+*.pyc

@@ -1,0 +1,15 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "lcam_v5.xmodel",
+    "kernel": [
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam4__ChannelAttention_channel_attention__25155_inserted_fix_40",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam5__ChannelAttention_channel_attention__25609_inserted_fix_42",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__BaseConv_bu_conv1__Conv2d_conv__input_399",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOXHead_head__26809",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOXHead_head__26612",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__BaseConv_stem__Conv2d_conv__input_3",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOXHead_head__Conv2d_reg_preds__ModuleList_2__26982",
+        "subgraph_LCAMYOLOXDetector__LCAMYOLOXDetector_YOLOX_model__YOLOPAFPN_backbone__CSPDarknet_backbone__LCAM_lcam3__ChannelAttention_channel_attention__24686_inserted_fix_38"
+    ],
+    "target": "DPUCZDX8G_ISA1_B4096"
+}

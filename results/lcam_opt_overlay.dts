@@ -1,0 +1,72 @@
+/*
+ * pl_overlay_lcam_opt.dts
+ * Overlay for the standalone OPTIMISED lcam_attention_gate bitstream.
+ *
+ * No DPU in this design, so this is the simple case: firmware-name,
+ * the PL reset, zocl (for CMA buffer allocation), and the IP node.
+ *
+ * Modelled on the stock kv260-benchmark overlay -- fragment@0 for
+ * fpga_full, fragment@1 targeting &amba for everything else. Do NOT use
+ * a bare "&amba { }" block alongside an explicit fragment@0: dtc rejects
+ * it with "ERROR (duplicate_node_names): /fragment@0".
+ *
+ * zocl is REQUIRED: without it there is no /dev/dri/renderD128 and
+ * ZoclBuffer cannot allocate at all (PROJECT_HISTORY.md §12).
+ *
+ * Addresses match board_driver/hw_ip_driver.py IP_ADDR["lcam_attention_gate"]
+ * so the existing driver and benchmark scripts run unchanged.
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&fpga_full>;
+        __overlay__ {
+            #address-cells = <2>;
+            #size-cells = <2>;
+            firmware-name = "lcam_opt.bit.bin";
+            resets = <&zynqmp_reset 116>;
+        };
+    };
+
+    fragment@1 {
+        target = <&amba>;
+        __overlay__ {
+
+            afi0 {
+                compatible = "xlnx,afi-fpga";
+                config-afi = <0x00 0x00 0x01 0x00 0x02 0x00 0x03 0x00
+                              0x04 0x00 0x05 0x00 0x06 0x00 0x07 0x00
+                              0x08 0x00 0x09 0x00 0x0a 0x00 0x0b 0x00
+                              0x0c 0x00 0x0d 0x00 0x0e 0x00 0x0f 0x00>;
+            };
+
+            clocking0: clocking0 {
+                #clock-cells = <0>;
+                compatible = "xlnx,fclk";
+                clock-output-names = "fabric_clk";
+                assigned-clock-rates = <99999001>;
+                assigned-clocks = <&zynqmp_clk 71>;
+                clocks = <&zynqmp_clk 71>;
+            };
+
+            zyxclmm_drm {
+                compatible = "xlnx,zocl";
+                status = "okay";
+                interrupt-parent = <&gic>;
+                interrupts = <0 0x59 4>, <0 0x5a 4>, <0 0x5b 4>, <0 0x5c 4>,
+                             <0 0x5d 4>, <0 0x5e 4>, <0 0x5f 4>, <0 0x60 4>;
+            };
+
+            lcam_opt_0: lcam_attention_gate_opt@80060000 {
+                compatible = "xlnx,lcam-attention-gate-opt-2.0";
+                clock-names = "ap_clk";
+                clocks = <&zynqmp_clk 71>;
+                reg = <0x0 0x80060000 0x0 0x10000
+                       0x0 0x800f0000 0x0 0x10000>;
+            };
+        };
+    };
+};

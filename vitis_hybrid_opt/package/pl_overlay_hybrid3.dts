@@ -1,0 +1,87 @@
+/*
+ * pl_overlay_hybrid3.dts
+ * Device tree overlay for the Vitis-linked HYBRID design:
+ *   DPUCZDX8G B4096 (URAM)  +  lcam_attention_gate_opt
+ *
+ * DELIBERATELY CONTAINS NO IP NODES.
+ *
+ * That is the important difference from pl_overlay_lcam_opt.dts. In the
+ * Vivado-IP flow we hand-wrote a node per IP so the driver could find
+ * registers. Here the design is a proper XRT design: zocl discovers every
+ * compute unit from the xclbin's IP_LAYOUT section, so the overlay only
+ * has to bring up the PL, its clock, and zocl itself.
+ *
+ * Declaring a DPU node here is actively harmful -- we did it once and its
+ * interrupt collided with the IRQ 89 that zocl claims, leaving XRT with
+ * "KDS is in bad state" and no usable device. The stock Xilinx kv260-dpu
+ * overlay has no DPU node either, for exactly this reason.
+ *
+ * fragment@0 / fragment@1 must both be explicit fragments. Do NOT mix an
+ * explicit fragment@0 with a bare "&amba { }" block -- dtc rejects that
+ * with "ERROR (duplicate_node_names): /fragment@0".
+ *
+ * Build:  dtc -@ -O dtb -o hybrid3.dtbo pl_overlay_hybrid3.dts
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&fpga_full>;
+        __overlay__ {
+            #address-cells = <2>;
+            #size-cells = <2>;
+            firmware-name = "hybrid3.bit.bin";
+            resets = <&zynqmp_reset 116>;
+        };
+    };
+
+    fragment@1 {
+        target = <&amba>;
+        __overlay__ {
+
+            afi0 {
+                compatible = "xlnx,afi-fpga";
+                config-afi = <0x00 0x00 0x01 0x00 0x02 0x00 0x03 0x00
+                              0x04 0x00 0x05 0x00 0x06 0x00 0x07 0x00
+                              0x08 0x00 0x09 0x00 0x0a 0x00 0x0b 0x00
+                              0x0c 0x00 0x0d 0x00 0x0e 0x00 0x0f 0x00>;
+            };
+
+            /*
+             * The platform's clk_wiz is fed from pl_clk0, configured for
+             * 100 MHz in build_platform.tcl
+             * (PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ = 100). The 300 MHz DPU
+             * aclk and 600 MHz ap_clk_2 are derived inside the PL by the
+             * clk_wiz, so only this one reference clock is set here.
+             */
+            clocking0: clocking0 {
+                #clock-cells = <0>;
+                compatible = "xlnx,fclk";
+                clock-output-names = "fabric_clk";
+                assigned-clock-rates = <99999001>;
+                assigned-clocks = <&zynqmp_clk 71>;
+                clocks = <&zynqmp_clk 71>;
+            };
+
+            /*
+             * zocl. Without this node there is no /dev/dri/renderD128 and
+             * nothing -- not XRT, not VART, not our own driver -- can
+             * allocate a buffer (PROJECT_HISTORY.md section 12).
+             * The eight interrupts (0x59..0x60 = 89..96) mirror the stock
+             * kv260-dpu overlay. Our platform only wires pl_ps_irq0[0], so
+             * the rest simply never fire; keeping the stock list avoids
+             * diverging from the one configuration known to work.
+             */
+            zyxclmm_drm {
+                compatible = "xlnx,zocl";
+                status = "okay";
+                interrupt-parent = <&gic>;
+                interrupts = <0 0x59 4>, <0 0x5a 4>, <0 0x5b 4>, <0 0x5c 4>,
+                             <0 0x5d 4>, <0 0x5e 4>, <0 0x5f 4>, <0 0x60 4>;
+            };
+        };
+    };
+};
+

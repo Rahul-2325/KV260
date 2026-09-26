@@ -1,0 +1,79 @@
+{
+  "ip_layout": {
+    "m_count": "9",
+    "m_ip_data": [
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80000000",
+        "m_name": "conv2d_engine:conv2d_engine_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80010000",
+        "m_name": "depthwise_engine:depthwise_engine_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80020000",
+        "m_name": "eltwise_add:eltwise_add_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80030000",
+        "m_name": "head_concat_reshape:head_concat_reshape_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80040000",
+        "m_name": "head_sigmoid:head_sigmoid_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80050000",
+        "m_name": "head_transpose:head_transpose_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80060000",
+        "m_name": "lcam_attention_gate:lcam_attention_gate_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80070000",
+        "m_name": "pool_engine:pool_engine_0"
+      },
+      {
+        "m_type": "IP_KERNEL",
+        "m_int_enable": "0",
+        "m_interrupt_id": "0",
+        "m_ip_control": "AP_CTRL_HS",
+        "m_base_address": "0x80080000",
+        "m_name": "upsample_engine:upsample_engine_0"
+      }
+    ]
+  }
+}

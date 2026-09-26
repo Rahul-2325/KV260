@@ -1,0 +1,150 @@
+================================================
+  KV260 Capabilities Report - Fri May 22 14:19:53 UTC 2026
+================================================
+
+=== System Info ===
+Linux kria 5.15.0-1068-xilinx-zynqmp #72-Ubuntu SMP Thu Apr 2 04:21:18 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+
+=== Vitis AI Versions ===
+{
+    "DPU IP Spec":{
+        "DPU Core Count":1,
+        "IP version":"v4.0.0",
+        "generation timestamp":"2022-05-14 14-30-00",
+        "git commit id":"4772d51",
+        "git commit time":2022051323,
+        "regmap":"1to1 version"
+    },
+    "VAI Version":{
+        "libvart-runner.so":"Xilinx vart-runner Version: 2.5.0-  2022-07-20-17:13:58 ",
+        "libvitis_ai_library-dpu_task.so":"Xilinx vitis_ai_library dpu_task Version: 2.5.0-  2022-07-15 16:21:46 [UTC] ",
+        "libxir.so":"Xilinx xir Version: xir- 2022-07-20-17:06:45",
+        "target_factory":"target-factory.2.5.0 d02dcb6041663dbc7ecbc0c6af9fafa087a789de"
+    },
+    "kernels":[
+        {
+            "DPU Arch":"DPUCZDX8G_ISA1_B4096",
+            "DPU Frequency (MHz)":300,
+            "IP Type":"DPU",
+
+=== Python VART/XIR Versions ===
+VART path: /usr/local/lib/python3.10/dist-packages/vart.cpython-310-aarch64-linux-gnu.so
+XIR path: /usr/local/lib/python3.10/dist-packages/xir.cpython-310-aarch64-linux-gnu.so
+
+=== DPU Information ===
+{
+    "DPU IP Spec":{
+        "DPU Core Count":1,
+        "IP version":"v4.0.0",
+        "generation timestamp":"2022-05-14 14-30-00",
+        "git commit id":"4772d51",
+        "git commit time":2022051323,
+        "regmap":"1to1 version"
+    },
+    "VAI Version":{
+        "libvart-runner.so":"Xilinx vart-runner Version: 2.5.0-  2022-07-20-17:13:58 ",
+        "libvitis_ai_library-dpu_task.so":"Xilinx vitis_ai_library dpu_task Version: 2.5.0-  2022-07-15 16:21:46 [UTC] ",
+        "libxir.so":"Xilinx xir Version: xir- 2022-07-20-17:06:45",
+        "target_factory":"target-factory.2.5.0 d02dcb6041663dbc7ecbc0c6af9fafa087a789de"
+    },
+    "kernels":[
+        {
+            "DPU Arch":"DPUCZDX8G_ISA1_B4096",
+            "DPU Frequency (MHz)":300,
+            "IP Type":"DPU",
+            "Load Parallel":2,
+            "Load augmentation":"enable",
+            "Load minus mean":"disable",
+            "Save Parallel":2,
+            "XRT Frequency (MHz)":300,
+            "cu_addr":"0xa0010000",
+            "cu_handle":"0xaaaaf9902620",
+            "cu_idx":0,
+            "cu_mask":1,
+            "cu_name":"DPUCZDX8G:DPUCZDX8G_1",
+            "device_id":0,
+            "fingerprint":"0x101000016010407",
+            "name":"DPU Core 0"
+        }
+    ]
+}
+
+=== Available Operator Libraries ===
+ClippedRelu
+GridAnchor_TRT
+NMS_TRT
+aten__cos
+aten__sin
+avgpool2d
+batchTilePlugin
+batchnorm
+clamp
+compare
+concat
+concat-fix
+const
+const-fix
+conv2d-fix
+cos
+data
+data-fix
+depthwise-conv2d
+depthwise-conv2d-fix
+depthwise-fix
+div
+download
+downsample-fix
+eltwise-fix
+exp
+fix
+fix2float
+flatten
+float2fix
+gstiling
+hard-sigmoid-fix
+leaky-relu
+max
+min
+mul
+my_normalize
+nn_channel_shuffle
+normalize
+pad-fix
+pool-fix
+priorbox
+python-cpu-op
+reduction_max
+reduction_sum
+region
+reorg-fix
+reshape
+reshape-fix
+select
+sigmoid
+sin
+softmax
+squeeze
+strided_slice
+sub
+tanh
+tile-fix
+topk
+transpose
+transposed-conv2d-fix
+transposed-depthwise-conv2d-fix
+upload
+upsample-fix
+voxel_pooling_scatter_sum
+
+=== Active App ===
+                     Accelerator          Accel_type                            Base           Base_type      #slots(PL+AIE)         Active_slot
+
+           kv260-nlp-smartvision            XRT_FLAT           kv260-nlp-smartvision            XRT_FLAT               (0+0)                  -1
+                  kv260-smartcam            XRT_FLAT                  kv260-smartcam            XRT_FLAT               (0+0)                  -1
+                k26-starter-kits            XRT_FLAT                k26-starter-kits            XRT_FLAT               (0+0)                  -1
+                kv260-aibox-reid            XRT_FLAT                kv260-aibox-reid            XRT_FLAT               (0+0)                  -1
+           kv260-benchmark-b4096            XRT_FLAT           kv260-benchmark-b4096            XRT_FLAT               (0+0)                  0,
+

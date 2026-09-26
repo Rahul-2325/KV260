@@ -1,0 +1,20 @@
+{
+  "id": "punnamrahul/lcam-v8-lightweight",
+  "title": "lcam_v8_lightweight",
+  "code_file": "lcam_v8_lightweight.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "sayedgamal99/smoke-fire-detection-yolo"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

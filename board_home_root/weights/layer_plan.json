@@ -1,0 +1,7306 @@
+[
+  {
+    "id": 1,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_max__24308",
+    "out_shape": [
+      1,
+      160,
+      160,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_max__24308_fake_bias_fix",
+    "input_0_fp": 13,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "annel_attention__input_57_fix_download_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "_attention_channel_reduce_max_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 2,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_0__BaseConv_conv1__Conv2d_conv__input_25",
+    "out_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "backbone_dark2_1_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_23_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      32,
+      1,
+      1,
+      32
+    ],
+    "input_2_name": "ckbone_dark2_1_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 6
+  },
+  {
+    "id": 3,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_avg__24288",
+    "out_shape": [
+      1,
+      160,
+      160,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_avg__24288_fake_bias_fix",
+    "input_0_fp": 13,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "annel_attention__input_57_fix_download_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "_attention_channel_reduce_avg_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 4,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "Attention_spatial_attention__Conv2d_conv__input_61",
+    "out_shape": [
+      1,
+      160,
+      160,
+      1
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "kernel": [
+      7,
+      7
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "ion__Conv2d_conv__input_61_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      2
+    ],
+    "input_1_name": "ttention_spatial_attention__input_59_fix",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      1,
+      7,
+      7,
+      2
+    ],
+    "input_2_name": "_lcam2_spatial_attention_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 5,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_spatial_attention__Hardsigmoid_gate__24332_i0",
+    "out_shape": [
+      1,
+      160,
+      160,
+      1
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      160,
+      160,
+      1
+    ],
+    "input_0_name": "ial_attention__Conv2d_conv__input_61_fix",
+    "input_0_fp": 7
+  },
+  {
+    "id": 6,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "rk2__CSPLayer_1__Sequential_m__Bottleneck_0__24113",
+    "out_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "fp_out": 3,
+    "input_0_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24111_fix",
+    "input_0_fp": 3,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_23_fix",
+    "input_1_fp": 3
+  },
+  {
+    "id": 7,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_channel_attention__Hardsigmoid_gate__24267_i0",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_0_name": "ttention_channel_attention__input_55_fix",
+    "input_0_fp": 7
+  },
+  {
+    "id": 8,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_0__BaseConv_conv2__Conv2d_conv__input_31",
+    "out_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "backbone_dark2_1_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_29_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      32,
+      3,
+      3,
+      32
+    ],
+    "input_2_name": "ckbone_dark2_1_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 9,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "l_avg_pool__AdaptiveAvgPool2d_stage2__input_43_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      40,
+      40
+    ],
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      64
+    ],
+    "input_0_name": "avg_pool__AvgPool2d_stage1__input_41_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 10,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "_CSPLayer_1__BaseConv_conv3__Conv2d_conv__input_37",
+    "out_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "one_backbone_dark2_1_conv3_conv_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "quential_dark2__CSPLayer_1__input_35_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "e_backbone_dark2_1_conv3_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 11,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "alAvgPool_avg_pool__AvgPool2d_stage1__input_41_fix",
+    "out_shape": [
+      1,
+      40,
+      40,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      4,
+      4
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      4,
+      4
+    ],
+    "input_0_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__24143_fix",
+    "input_0_fp": 3
+  },
+  {
+    "id": 12,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nnel_attention__Sequential_mlp__Conv2d_0__input_45",
+    "out_shape": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      4
+    ],
+    "input_0_name": "al_mlp__Conv2d_0__input_45_fake_bias_fix",
+    "input_0_fp": 13,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_1_name": "__AdaptiveAvgPool2d_stage2__input_43_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      4,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "lcam2_channel_attention_mlp_0_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 13,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__24214",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__24214_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "input_1_name": "equential_mlp__LeakyReLU_1__input_47_fix",
+    "input_1_fp": 7,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      4
+    ],
+    "input_2_name": "lcam2_channel_attention_mlp_2_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 14,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "knet_backbone__BaseConv_stem__Conv2d_conv__input_3",
+    "out_shape": [
+      1,
+      320,
+      320,
+      32
+    ],
+    "fp_out": 3,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "del_backbone_backbone_stem_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      640,
+      640,
+      3
+    ],
+    "input_1_name": "LCAMYOLOXDetector__input_0_fix_upload_0",
+    "input_1_fp": -1,
+    "input_2_shape": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "input_2_name": "l_backbone_backbone_stem_conv_weight_fix",
+    "input_2_fp": 11
+  },
+  {
+    "id": 15,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "Sequential_dark2__BaseConv_0__Conv2d_conv__input_9",
+    "out_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "fp_out": 2,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "_backbone_backbone_dark2_0_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      320,
+      320,
+      32
+    ],
+    "input_1_name": "aseConv_stem__LeakyReLU_act__input_7_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      64,
+      3,
+      3,
+      32
+    ],
+    "input_2_name": "ackbone_backbone_dark2_0_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 16,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Attention_channel_attention__24217_inserted_fix_36",
+    "out_shape": [
+      1,
+      1,
+      1,
+      10240
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      160,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      160,
+      10240
+    ],
+    "input_0_name": "_act__24143_fix_reshaped_inserted_fix_35",
+    "input_0_fp": 3
+  },
+  {
+    "id": 17,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "cam2__ChannelAttention_channel_attention__input_55",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_0_name": "ion__Sequential_mlp__Conv2d_2__24214_fix",
+    "input_0_fp": 7,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_1_name": "ion__Sequential_mlp__Conv2d_2__24264_fix",
+    "input_1_fp": 6
+  },
+  {
+    "id": 18,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "__ChannelAttention_channel_attention__input_49_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      160,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      160,
+      64
+    ],
+    "input_0_name": "elAttention_channel_attention__24217_fix",
+    "input_0_fp": 3
+  },
+  {
+    "id": 19,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nnel_attention__Sequential_mlp__Conv2d_0__input_51",
+    "out_shape": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      4
+    ],
+    "input_0_name": "al_mlp__Conv2d_0__input_51_fake_bias_fix",
+    "input_0_fp": 11,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_1_name": "ttention_channel_attention__input_49_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      4,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "on_mlp_0_weight__9223372036854775775_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 20,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__24264",
+    "out_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__24264_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "input_1_name": "equential_mlp__LeakyReLU_1__input_53_fix",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      4
+    ],
+    "input_2_name": "on_mlp_2_weight__9223372036854775773_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 21,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "_CSPLayer_1__BaseConv_conv1__Conv2d_conv__input_15",
+    "out_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "one_backbone_dark2_1_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "_BaseConv_0__LeakyReLU_act__input_13_fix",
+    "input_1_fp": 2,
+    "input_2_shape": [
+      32,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "e_backbone_dark2_1_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 22,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "_CSPLayer_1__BaseConv_conv2__Conv2d_conv__input_19",
+    "out_shape": [
+      1,
+      160,
+      160,
+      32
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "one_backbone_dark2_1_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "_BaseConv_0__LeakyReLU_act__input_13_fix",
+    "input_1_fp": 2,
+    "input_2_shape": [
+      32,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "e_backbone_dark2_1_conv2_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 23,
+    "subgraph": 1,
+    "device": "DPU",
+    "op_type": "depthwise-fix",
+    "name": "cam2__ChannelAttention_channel_attention__input_57",
+    "out_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "fp_out": 4,
+    "input_0_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__24143_fix",
+    "input_0_fp": 3,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      64
+    ],
+    "input_1_name": "l_attention__Hardsigmoid_gate__24267_fix",
+    "input_1_fp": 7
+  },
+  {
+    "id": 24,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "lAvgPool_avg_pool__AvgPool2d_stage1__input_121_fix",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 6,
+    "stride": [
+      4,
+      4
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      4,
+      4
+    ],
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__24612_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 25,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__24683",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 8,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__24683_fake_bias_fix",
+    "input_0_fp": 17,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_127_fix",
+    "input_1_fp": 8,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      8
+    ],
+    "input_2_name": "lcam3_channel_attention_mlp_2_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 26,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_125",
+    "out_shape": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "fp_out": 8,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      8
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_125_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_1_name": "_AdaptiveAvgPool2d_stage2__input_123_fix",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      8,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "lcam3_channel_attention_mlp_0_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 27,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_1__BaseConv_conv3__Conv2d_conv__input_117",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "one_backbone_dark3_1_conv3_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "uential_dark3__CSPLayer_1__input_115_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "e_backbone_dark3_1_conv3_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 28,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "am3__ChannelAttention_channel_attention__input_135",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_0_name": "ion__Sequential_mlp__Conv2d_2__24683_fix",
+    "input_0_fp": 8,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_1_name": "ion__Sequential_mlp__Conv2d_2__24733_fix",
+    "input_1_fp": 7
+  },
+  {
+    "id": 29,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "_CSPLayer_1__BaseConv_conv2__Conv2d_conv__input_75",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "one_backbone_dark3_1_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "_BaseConv_0__LeakyReLU_act__input_69_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "e_backbone_dark3_1_conv2_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 30,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_avg_pool__AdaptiveAvgPool2d_stage2__input_123_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      20,
+      20
+    ],
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_0_name": "vg_pool__AvgPool2d_stage1__input_121_fix",
+    "input_0_fp": 6
+  },
+  {
+    "id": 31,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_channel_attention__Hardsigmoid_gate__24736_i0",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_0_name": "tention_channel_attention__input_135_fix",
+    "input_0_fp": 7
+  },
+  {
+    "id": 32,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_2__BaseConv_conv1__Conv2d_conv__input_105",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_2_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "equential_m__Bottleneck_1__input_103_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_2_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 33,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "rk3__CSPLayer_1__Sequential_m__Bottleneck_2__24582",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24580_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "equential_m__Bottleneck_1__input_103_fix",
+    "input_1_fp": 4
+  },
+  {
+    "id": 34,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_131",
+    "out_shape": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      8
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_131_fake_bias_fix",
+    "input_0_fp": 13,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_1_name": "tention_channel_attention__input_129_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      8,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "on_mlp_0_weight__9223372036854775722_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 35,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_1__BaseConv_conv1__Conv2d_conv__input_93",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_1_conv1_conv_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "Sequential_m__Bottleneck_0__input_91_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_1_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 36,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "_CSPLayer_1__Sequential_m__Bottleneck_1__input_103",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24524_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "Sequential_m__Bottleneck_0__input_91_fix",
+    "input_1_fp": 5
+  },
+  {
+    "id": 37,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_2__BaseConv_conv2__Conv2d_conv__input_111",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_2_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_109_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      3,
+      3,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_2_conv2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 38,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_1__BaseConv_conv2__Conv2d_conv__input_99",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_1_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_97_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      3,
+      3,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_1_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 39,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__24733",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__24733_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_133_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      8
+    ],
+    "input_2_name": "on_mlp_2_weight__9223372036854775720_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 40,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "__CSPLayer_1__Sequential_m__Bottleneck_0__input_91",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24468_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_79_fix",
+    "input_1_fp": 5
+  },
+  {
+    "id": 41,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "depthwise-fix",
+    "name": "am3__ChannelAttention_channel_attention__input_137",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__24612_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_1_name": "l_attention__Hardsigmoid_gate__24736_fix",
+    "input_1_fp": 7
+  },
+  {
+    "id": 42,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_0__BaseConv_conv2__Conv2d_conv__input_87",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_85_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      3,
+      3,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 43,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "_CSPLayer_1__BaseConv_conv1__Conv2d_conv__input_71",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "one_backbone_dark3_1_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "_BaseConv_0__LeakyReLU_act__input_69_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "e_backbone_dark3_1_conv1_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 44,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "equential_dark3__BaseConv_0__Conv2d_conv__input_65",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "_backbone_backbone_dark3_0_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      160,
+      160,
+      64
+    ],
+    "input_1_name": "spatial_attention__input_63_fix_upload_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      64
+    ],
+    "input_2_name": "ackbone_backbone_dark3_0_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 45,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ottleneck_0__BaseConv_conv1__Conv2d_conv__input_81",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "backbone_dark3_1_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "eConv_conv1__LeakyReLU_act__input_79_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "ckbone_dark3_1_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 6
+  },
+  {
+    "id": 46,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_avg__24757",
+    "out_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_avg__24757_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "nnel_attention__input_137_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "_attention_channel_reduce_avg_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 47,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Attention_channel_attention__24686_inserted_fix_38",
+    "out_shape": [
+      1,
+      1,
+      1,
+      10240
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      80,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      80,
+      10240
+    ],
+    "input_0_name": "_act__24612_fix_reshaped_inserted_fix_37",
+    "input_0_fp": 4
+  },
+  {
+    "id": 48,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_ChannelAttention_channel_attention__input_129_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      80,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      80,
+      128
+    ],
+    "input_0_name": "elAttention_channel_attention__24686_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 49,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_spatial_attention__Hardsigmoid_gate__24801_i0",
+    "out_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "input_0_name": "al_attention__Conv2d_conv__input_141_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 50,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_max__24777",
+    "out_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_max__24777_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "nnel_attention__input_137_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "_attention_channel_reduce_max_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 51,
+    "subgraph": 3,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttention_spatial_attention__Conv2d_conv__input_141",
+    "out_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "kernel": [
+      7,
+      7
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "on__Conv2d_conv__input_141_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      2
+    ],
+    "input_1_name": "tention_spatial_attention__input_139_fix",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      1,
+      7,
+      7,
+      2
+    ],
+    "input_2_name": "_lcam3_spatial_attention_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 52,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_avg__25226",
+    "out_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_avg__25226_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "nnel_attention__input_217_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "_attention_channel_reduce_avg_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 53,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "depthwise-fix",
+    "name": "am4__ChannelAttention_channel_attention__input_217",
+    "out_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__25081_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_1_name": "l_attention__Hardsigmoid_gate__25205_fix",
+    "input_1_fp": 7
+  },
+  {
+    "id": 54,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "am4__ChannelAttention_channel_attention__input_215",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 8,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_0_name": "ion__Sequential_mlp__Conv2d_2__25152_fix",
+    "input_0_fp": 9,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_1_name": "ion__Sequential_mlp__Conv2d_2__25202_fix",
+    "input_1_fp": 8
+  },
+  {
+    "id": 55,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_channel_attention__Hardsigmoid_gate__25205_i0",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_0_name": "tention_channel_attention__input_215_fix",
+    "input_0_fp": 8
+  },
+  {
+    "id": 56,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__25202",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 8,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__25202_fake_bias_fix",
+    "input_0_fp": 16,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      16
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_213_fix",
+    "input_1_fp": 7,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      16
+    ],
+    "input_2_name": "on_mlp_2_weight__9223372036854775667_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 57,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_211",
+    "out_shape": [
+      1,
+      1,
+      1,
+      16
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      16
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_211_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_1_name": "tention_channel_attention__input_209_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      16,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "on_mlp_0_weight__9223372036854775669_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 58,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_ChannelAttention_channel_attention__input_209_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      40,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      40,
+      256
+    ],
+    "input_0_name": "elAttention_channel_attention__25155_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 59,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "lAvgPool_avg_pool__AvgPool2d_stage1__input_201_fix",
+    "out_shape": [
+      1,
+      10,
+      10,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      4,
+      4
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      4,
+      4
+    ],
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__25081_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 60,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__25152",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 9,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__25152_fake_bias_fix",
+    "input_0_fp": 17,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      16
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_207_fix",
+    "input_1_fp": 8,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      16
+    ],
+    "input_2_name": "lcam4_channel_attention_mlp_2_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 61,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Attention_channel_attention__25155_inserted_fix_40",
+    "out_shape": [
+      1,
+      1,
+      1,
+      10240
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      40,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      40,
+      10240
+    ],
+    "input_0_name": "_act__25081_fix_reshaped_inserted_fix_39",
+    "input_0_fp": 4
+  },
+  {
+    "id": 62,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_205",
+    "out_shape": [
+      1,
+      1,
+      1,
+      16
+    ],
+    "fp_out": 8,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      16
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_205_fake_bias_fix",
+    "input_0_fp": 17,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_1_name": "_AdaptiveAvgPool2d_stage2__input_203_fix",
+    "input_1_fp": 7,
+    "input_2_shape": [
+      16,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "lcam4_channel_attention_mlp_0_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 63,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_1__BaseConv_conv3__Conv2d_conv__input_197",
+    "out_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "one_backbone_dark4_1_conv3_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "uential_dark4__CSPLayer_1__input_195_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "e_backbone_dark4_1_conv3_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 64,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_1__BaseConv_conv2__Conv2d_conv__input_155",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "one_backbone_dark4_1_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_149_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "e_backbone_dark4_1_conv2_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 65,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_avg_pool__AdaptiveAvgPool2d_stage2__input_203_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      10,
+      10
+    ],
+    "input_0_shape": [
+      1,
+      10,
+      10,
+      256
+    ],
+    "input_0_name": "vg_pool__AvgPool2d_stage1__input_201_fix",
+    "input_0_fp": 5
+  },
+  {
+    "id": 66,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "rk4__CSPLayer_1__Sequential_m__Bottleneck_2__25051",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__25049_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "equential_m__Bottleneck_1__input_183_fix",
+    "input_1_fp": 4
+  },
+  {
+    "id": 67,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_2__BaseConv_conv1__Conv2d_conv__input_185",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_2_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "equential_m__Bottleneck_1__input_183_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_2_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 68,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_2__BaseConv_conv2__Conv2d_conv__input_191",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_2_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_189_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_2_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 69,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "_CSPLayer_1__Sequential_m__Bottleneck_1__input_183",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24993_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "equential_m__Bottleneck_0__input_171_fix",
+    "input_1_fp": 5
+  },
+  {
+    "id": 70,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_1__BaseConv_conv1__Conv2d_conv__input_173",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_1_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "equential_m__Bottleneck_0__input_171_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_1_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 71,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttention_spatial_attention__Conv2d_conv__input_221",
+    "out_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "kernel": [
+      7,
+      7
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "on__Conv2d_conv__input_221_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      2
+    ],
+    "input_1_name": "tention_spatial_attention__input_219_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      7,
+      7,
+      2
+    ],
+    "input_2_name": "_lcam4_spatial_attention_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 72,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_1__BaseConv_conv2__Conv2d_conv__input_179",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_1_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_177_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_1_conv2_conv_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 73,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "_CSPLayer_1__Sequential_m__Bottleneck_0__input_171",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_0_name": "BaseConv_conv2__LeakyReLU_act__24937_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_159_fix",
+    "input_1_fp": 5
+  },
+  {
+    "id": 74,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_167",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_165_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 75,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_1__BaseConv_conv1__Conv2d_conv__input_151",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "one_backbone_dark4_1_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_149_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "e_backbone_dark4_1_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 76,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_161",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "backbone_dark4_1_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_159_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ckbone_dark4_1_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 6
+  },
+  {
+    "id": 77,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_max__25246",
+    "out_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_max__25246_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "nnel_attention__input_217_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "_attention_channel_reduce_max_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 78,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "quential_dark4__BaseConv_0__Conv2d_conv__input_145",
+    "out_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "_backbone_backbone_dark4_0_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "patial_attention__input_143_fix_upload_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "ackbone_backbone_dark4_0_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 79,
+    "subgraph": 5,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_spatial_attention__Hardsigmoid_gate__25270_i0",
+    "out_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "input_0_name": "al_attention__Conv2d_conv__input_221_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 80,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttention_spatial_attention__Conv2d_conv__input_289",
+    "out_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "kernel": [
+      7,
+      7
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "on__Conv2d_conv__input_289_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      2
+    ],
+    "input_1_name": "tention_spatial_attention__input_287_fix",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      1,
+      7,
+      7,
+      2
+    ],
+    "input_2_name": "_lcam5_spatial_attention_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 81,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_spatial_attention__Hardsigmoid_gate__25724_i0",
+    "out_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "input_0_name": "al_attention__Conv2d_conv__input_289_fix",
+    "input_0_fp": 6
+  },
+  {
+    "id": 82,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_max__25700",
+    "out_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_max__25700_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "nnel_attention__input_285_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "_attention_channel_reduce_max_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 83,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "depthwise-fix",
+    "name": "am5__ChannelAttention_channel_attention__input_285",
+    "out_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__25535_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_1_name": "l_attention__Hardsigmoid_gate__25659_fix",
+    "input_1_fp": 7
+  },
+  {
+    "id": 84,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "patial_attention__Conv2d_channel_reduce_avg__25680",
+    "out_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "fp_out": 6,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "_channel_reduce_avg__25680_fake_bias_fix",
+    "input_0_fp": 15,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "nnel_attention__input_285_fix_download_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "_attention_channel_reduce_avg_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 85,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "hard-sigmoid-fix",
+    "name": "tion_channel_attention__Hardsigmoid_gate__25659_i0",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 7,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_0_name": "tention_channel_attention__input_283_fix",
+    "input_0_fp": 5
+  },
+  {
+    "id": 86,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__25656",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__25656_fake_bias_fix",
+    "input_0_fp": 13,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      32
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_281_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      512,
+      1,
+      1,
+      32
+    ],
+    "input_2_name": "on_mlp_2_weight__9223372036854775619_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 87,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_279",
+    "out_shape": [
+      1,
+      1,
+      1,
+      32
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_279_fake_bias_fix",
+    "input_0_fp": 14,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_1_name": "tention_channel_attention__input_277_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      32,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "on_mlp_0_weight__9223372036854775621_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 88,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "eltwise-fix",
+    "name": "am5__ChannelAttention_channel_attention__input_283",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 5,
+    "input_0_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_0_name": "ion__Sequential_mlp__Conv2d_2__25606_fix",
+    "input_0_fp": 8,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_1_name": "ion__Sequential_mlp__Conv2d_2__25656_fix",
+    "input_1_fp": 5
+  },
+  {
+    "id": 89,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_ChannelAttention_channel_attention__input_277_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      20,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      20,
+      512
+    ],
+    "input_0_name": "elAttention_channel_attention__25609_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 90,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Attention_channel_attention__25609_inserted_fix_42",
+    "out_shape": [
+      1,
+      1,
+      1,
+      10240
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      20,
+      1
+    ],
+    "input_0_shape": [
+      1,
+      1,
+      20,
+      10240
+    ],
+    "input_0_name": "_act__25535_fix_reshaped_inserted_fix_41",
+    "input_0_fp": 4
+  },
+  {
+    "id": 91,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "channel_attention__Sequential_mlp__Conv2d_2__25606",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 8,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "ntial_mlp__Conv2d_2__25606_fake_bias_fix",
+    "input_0_fp": 16,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      32
+    ],
+    "input_1_name": "quential_mlp__LeakyReLU_1__input_275_fix",
+    "input_1_fp": 7,
+    "input_2_shape": [
+      512,
+      1,
+      1,
+      32
+    ],
+    "input_2_name": "lcam5_channel_attention_mlp_2_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 92,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "lAvgPool_avg_pool__AvgPool2d_stage1__input_269_fix",
+    "out_shape": [
+      1,
+      5,
+      5,
+      512
+    ],
+    "fp_out": 5,
+    "stride": [
+      4,
+      4
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      4,
+      4
+    ],
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_0_name": "BaseConv_conv3__LeakyReLU_act__25535_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 93,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "nel_attention__Sequential_mlp__Conv2d_0__input_273",
+    "out_shape": [
+      1,
+      1,
+      1,
+      32
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      32
+    ],
+    "input_0_name": "l_mlp__Conv2d_0__input_273_fake_bias_fix",
+    "input_0_fp": 17,
+    "input_1_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "input_1_name": "_AdaptiveAvgPool2d_stage2__input_271_fix",
+    "input_1_fp": 7,
+    "input_2_shape": [
+      32,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "lcam5_channel_attention_mlp_0_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 94,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_2__BaseConv_conv3__Conv2d_conv__input_265",
+    "out_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "one_backbone_dark5_2_conv3_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "uential_dark5__CSPLayer_2__input_263_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      512,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "e_backbone_dark5_2_conv3_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 95,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "_avg_pool__AdaptiveAvgPool2d_stage2__input_271_fix",
+    "out_shape": [
+      1,
+      1,
+      1,
+      512
+    ],
+    "fp_out": 7,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      5,
+      5
+    ],
+    "input_0_shape": [
+      1,
+      5,
+      5,
+      512
+    ],
+    "input_0_name": "vg_pool__AvgPool2d_stage1__input_269_fix",
+    "input_0_fp": 5
+  },
+  {
+    "id": 96,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_259",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "backbone_dark5_2_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_257_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      3,
+      3,
+      256
+    ],
+    "input_2_name": "ckbone_dark5_2_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 97,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_2__BaseConv_conv2__Conv2d_conv__input_247",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "one_backbone_dark5_2_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "Conv_conv2__LeakyReLU_act__input_241_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "e_backbone_dark5_2_conv2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 98,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_253",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "backbone_dark5_2_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_251_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "ckbone_dark5_2_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 99,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "CSPLayer_2__BaseConv_conv1__Conv2d_conv__input_243",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "one_backbone_dark5_2_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "Conv_conv2__LeakyReLU_act__input_241_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "e_backbone_dark5_2_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 100,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_1__BaseConv_conv2__Conv2d_conv__input_237",
+    "out_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "one_backbone_dark5_1_conv2_conv_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      1024
+    ],
+    "input_1_name": "al_dark5__SPPBottleneck_1__input_235_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      512,
+      1,
+      1,
+      1024
+    ],
+    "input_2_name": "e_backbone_dark5_1_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 101,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Bottleneck_1__MaxPool2d_m__ModuleList_2__25367_fix",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "kernel": [
+      13,
+      13
+    ],
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_0_name": "BaseConv_conv1__LeakyReLU_act__25325_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 102,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Bottleneck_1__MaxPool2d_m__ModuleList_1__25353_fix",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "kernel": [
+      9,
+      9
+    ],
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_0_name": "BaseConv_conv1__LeakyReLU_act__25325_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 103,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "pool-fix",
+    "name": "Bottleneck_1__MaxPool2d_m__ModuleList_0__25339_fix",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "kernel": [
+      5,
+      5
+    ],
+    "input_0_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_0_name": "BaseConv_conv1__LeakyReLU_act__25325_fix",
+    "input_0_fp": 4
+  },
+  {
+    "id": 104,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_1__BaseConv_conv1__Conv2d_conv__input_231",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "one_backbone_dark5_1_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_229_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "e_backbone_dark5_1_conv1_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 105,
+    "subgraph": 7,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "quential_dark5__BaseConv_0__Conv2d_conv__input_225",
+    "out_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "fp_out": 4,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "_backbone_backbone_dark5_0_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "patial_attention__input_223_fix_upload_0",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      512,
+      3,
+      3,
+      256
+    ],
+    "input_2_name": "ackbone_backbone_dark5_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 106,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ne__BaseConv_lateral_conv0__Conv2d_conv__input_293",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "del_backbone_lateral_conv0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "patial_attention__input_291_fix_upload_0",
+    "input_1_fp": 6,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "l_backbone_lateral_conv0_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 107,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p4__BaseConv_conv1__Conv2d_conv__input_301",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "model_backbone_C3_p4_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      512
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_299_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "del_backbone_C3_p4_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 108,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_311",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "l_backbone_C3_p4_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_309_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "backbone_C3_p4_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 109,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_317",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "l_backbone_C3_p4_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_315_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "backbone_C3_p4_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 110,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p4__BaseConv_conv2__Conv2d_conv__input_305",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "model_backbone_C3_p4_conv2_conv_bias_fix",
+    "input_0_fp": 7,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      512
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_299_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "del_backbone_C3_p4_conv2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 111,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p4__BaseConv_conv3__Conv2d_conv__input_323",
+    "out_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "model_backbone_C3_p4_conv3_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "_backbone__CSPLayer_C3_p4__input_321_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_p4_conv3_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 112,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "one__BaseConv_reduce_conv1__Conv2d_conv__input_329",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "odel_backbone_reduce_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_327_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "el_backbone_reduce_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 113,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p3__BaseConv_conv1__Conv2d_conv__input_337",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "model_backbone_C3_p3_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      256
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_335_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_p3_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 114,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_347",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "l_backbone_C3_p3_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_345_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      64
+    ],
+    "input_2_name": "backbone_C3_p3_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 115,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_353",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "l_backbone_C3_p3_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_351_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      3,
+      3,
+      64
+    ],
+    "input_2_name": "backbone_C3_p3_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 116,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p3__BaseConv_conv2__Conv2d_conv__input_341",
+    "out_shape": [
+      1,
+      80,
+      80,
+      64
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      64
+    ],
+    "input_0_name": "model_backbone_C3_p3_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      256
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_335_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      64,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_p3_conv2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 117,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_p3__BaseConv_conv3__Conv2d_conv__input_359",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "model_backbone_C3_p3_conv3_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "_backbone__CSPLayer_C3_p3__input_357_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "del_backbone_C3_p3_conv3_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 118,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ackbone__BaseConv_bu_conv2__Conv2d_conv__input_365",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "r__model_backbone_bu_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_363_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "_model_backbone_bu_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 119,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n3__BaseConv_conv1__Conv2d_conv__input_371",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "model_backbone_C3_n3_conv1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_369_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_n3_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 120,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_381",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "l_backbone_C3_n3_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_379_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "backbone_C3_n3_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 121,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_387",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "l_backbone_C3_n3_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_385_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "backbone_C3_n3_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 122,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n3__BaseConv_conv2__Conv2d_conv__input_375",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "model_backbone_C3_n3_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_369_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_n3_conv2_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 123,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n3__BaseConv_conv3__Conv2d_conv__input_393",
+    "out_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "model_backbone_C3_n3_conv3_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "_backbone__CSPLayer_C3_n3__input_391_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "del_backbone_C3_n3_conv3_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 124,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ackbone__BaseConv_bu_conv1__Conv2d_conv__input_399",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 5,
+    "stride": [
+      2,
+      2
+    ],
+    "pad": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "r__model_backbone_bu_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_397_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      3,
+      3,
+      256
+    ],
+    "input_2_name": "_model_backbone_bu_conv1_conv_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 125,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n4__BaseConv_conv1__Conv2d_conv__input_405",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "model_backbone_C3_n4_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_403_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "del_backbone_C3_n4_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 126,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv1__Conv2d_conv__input_415",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "l_backbone_C3_n4_m_0_conv1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_413_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "backbone_C3_n4_m_0_conv1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 127,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ttleneck_0__BaseConv_conv2__Conv2d_conv__input_421",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "l_backbone_C3_n4_m_0_conv2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "input_1_name": "Conv_conv1__LeakyReLU_act__input_419_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      256,
+      3,
+      3,
+      256
+    ],
+    "input_2_name": "backbone_C3_n4_m_0_conv2_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 128,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n4__BaseConv_conv2__Conv2d_conv__input_409",
+    "out_shape": [
+      1,
+      20,
+      20,
+      256
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      256
+    ],
+    "input_0_name": "model_backbone_C3_n4_conv2_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "model__YOLOPAFPN_backbone__input_403_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      256,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "del_backbone_C3_n4_conv2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 129,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "ayer_C3_n4__BaseConv_conv3__Conv2d_conv__input_427",
+    "out_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      512
+    ],
+    "input_0_name": "model_backbone_C3_n4_conv3_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "_backbone__CSPLayer_C3_n4__input_425_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      512,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "del_backbone_C3_n4_conv3_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 130,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "seConv_stems__ModuleList_2__Conv2d_conv__input_493",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "tector__model_head_stems_2_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      512
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_491_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      512
+    ],
+    "input_2_name": "ctor__model_head_stems_2_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 131,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_2__BaseConv_0__Conv2d_conv__input_499",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_2_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "duleList_2__LeakyReLU_act__input_497_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_2_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 132,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_2__BaseConv_1__Conv2d_conv__input_505",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_2_1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_503_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_2_1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 133,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_cls_preds__ModuleList_2__26909",
+    "out_shape": [
+      1,
+      20,
+      20,
+      2
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      2
+    ],
+    "input_0_name": "etector__model_head_cls_preds_2_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "BaseConv_1__LeakyReLU_act__input_509_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      2,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_cls_preds_2_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 134,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_2__BaseConv_0__Conv2d_conv__input_511",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_2_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "duleList_2__LeakyReLU_act__input_497_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_2_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 135,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_2__BaseConv_1__Conv2d_conv__input_517",
+    "out_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_2_1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_515_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_2_1_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 136,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_obj_preds__ModuleList_2__27001",
+    "out_shape": [
+      1,
+      20,
+      20,
+      1
+    ],
+    "fp_out": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "etector__model_head_obj_preds_2_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "v_1__LeakyReLU_act__input_fix_download_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_obj_preds_2_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 137,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "seConv_stems__ModuleList_1__Conv2d_conv__input_461",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "tector__model_head_stems_1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      256
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_397_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      256
+    ],
+    "input_2_name": "ctor__model_head_stems_1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 138,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_1__BaseConv_0__Conv2d_conv__input_467",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_1_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "duleList_1__LeakyReLU_act__input_465_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_1_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 139,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_1__BaseConv_1__Conv2d_conv__input_473",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_1_1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_471_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_1_1_conv_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 140,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_cls_preds__ModuleList_1__26712",
+    "out_shape": [
+      1,
+      40,
+      40,
+      2
+    ],
+    "fp_out": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      2
+    ],
+    "input_0_name": "etector__model_head_cls_preds_1_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "BaseConv_1__LeakyReLU_act__input_477_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      2,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_cls_preds_1_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 141,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_1__BaseConv_0__Conv2d_conv__input_479",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_1_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "duleList_1__LeakyReLU_act__input_465_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_1_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 142,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_1__BaseConv_1__Conv2d_conv__input_485",
+    "out_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_1_1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_483_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_1_1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 143,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_obj_preds__ModuleList_1__26804",
+    "out_shape": [
+      1,
+      40,
+      40,
+      1
+    ],
+    "fp_out": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "etector__model_head_obj_preds_1_bias_fix",
+    "input_0_fp": 7,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "_LeakyReLU_act__input_489_fix_download_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_obj_preds_1_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 144,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "seConv_stems__ModuleList_0__Conv2d_conv__input_431",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "tector__model_head_stems_0_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "Conv_conv3__LeakyReLU_act__input_363_fix",
+    "input_1_fp": 5,
+    "input_2_shape": [
+      128,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ctor__model_head_stems_0_conv_weight_fix",
+    "input_2_fp": 6
+  },
+  {
+    "id": 145,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_0__BaseConv_0__Conv2d_conv__input_437",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_0_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "duleList_0__LeakyReLU_act__input_435_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_0_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 146,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_0__BaseConv_1__Conv2d_conv__input_443",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_cls_convs_0_1_conv_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_441_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_cls_convs_0_1_conv_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 147,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_cls_preds__ModuleList_0__26515",
+    "out_shape": [
+      1,
+      80,
+      80,
+      2
+    ],
+    "fp_out": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      2
+    ],
+    "input_0_name": "etector__model_head_cls_preds_0_bias_fix",
+    "input_0_fp": 4,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "BaseConv_1__LeakyReLU_act__input_447_fix",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      2,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_cls_preds_0_weight_fix",
+    "input_2_fp": 10
+  },
+  {
+    "id": 148,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_0__BaseConv_0__Conv2d_conv__input_449",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 4,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_0_0_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "duleList_0__LeakyReLU_act__input_435_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_0_0_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 149,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "__ModuleList_0__BaseConv_1__Conv2d_conv__input_455",
+    "out_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "fp_out": 3,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "kernel": [
+      3,
+      3
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      128
+    ],
+    "input_0_name": "__model_head_reg_convs_0_1_conv_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "BaseConv_0__LeakyReLU_act__input_453_fix",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      128,
+      3,
+      3,
+      128
+    ],
+    "input_2_name": "model_head_reg_convs_0_1_conv_weight_fix",
+    "input_2_fp": 9
+  },
+  {
+    "id": 150,
+    "subgraph": 9,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_obj_preds__ModuleList_0__26607",
+    "out_shape": [
+      1,
+      80,
+      80,
+      1
+    ],
+    "fp_out": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      1
+    ],
+    "input_0_name": "etector__model_head_obj_preds_0_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "_LeakyReLU_act__input_459_fix_download_0",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      1,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_obj_preds_0_weight_fix",
+    "input_2_fp": 7
+  },
+  {
+    "id": 151,
+    "subgraph": 14,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_reg_preds__ModuleList_2__26982",
+    "out_shape": [
+      1,
+      20,
+      20,
+      4
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      4
+    ],
+    "input_0_name": "etector__model_head_reg_preds_2_bias_fix",
+    "input_0_fp": 5,
+    "input_1_shape": [
+      1,
+      20,
+      20,
+      128
+    ],
+    "input_1_name": "onv_1__LeakyReLU_act__input_fix_upload_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      4,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_reg_preds_2_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 152,
+    "subgraph": 17,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_reg_preds__ModuleList_1__26785",
+    "out_shape": [
+      1,
+      40,
+      40,
+      4
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      4
+    ],
+    "input_0_name": "etector__model_head_reg_preds_1_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      40,
+      40,
+      128
+    ],
+    "input_1_name": "1__LeakyReLU_act__input_489_fix_upload_0",
+    "input_1_fp": 4,
+    "input_2_shape": [
+      4,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_reg_preds_1_weight_fix",
+    "input_2_fp": 8
+  },
+  {
+    "id": 153,
+    "subgraph": 20,
+    "device": "DPU",
+    "op_type": "conv2d-fix",
+    "name": "OXHead_head__Conv2d_reg_preds__ModuleList_0__26588",
+    "out_shape": [
+      1,
+      80,
+      80,
+      4
+    ],
+    "fp_out": 5,
+    "stride": [
+      1,
+      1
+    ],
+    "pad": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "kernel": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "group": 1,
+    "input_0_shape": [
+      4
+    ],
+    "input_0_name": "etector__model_head_reg_preds_0_bias_fix",
+    "input_0_fp": 6,
+    "input_1_shape": [
+      1,
+      80,
+      80,
+      128
+    ],
+    "input_1_name": "1__LeakyReLU_act__input_459_fix_upload_0",
+    "input_1_fp": 3,
+    "input_2_shape": [
+      4,
+      1,
+      1,
+      128
+    ],
+    "input_2_name": "ector__model_head_reg_preds_0_weight_fix",
+    "input_2_fp": 8
+  }
+]
